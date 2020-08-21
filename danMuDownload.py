@@ -98,7 +98,7 @@ def get_df_DanMuFromXML(xml_url, headers=None, save_bool=False, save_path=None):
         if save_path is None:
             save_path = 'danmu.csv'
 
-        danmu_df.to_csv(save_path, index=False)
+        danmu_df.to_csv(save_path, index=False, encoding='utf_8_sig')
 
     return danmu_df
 
